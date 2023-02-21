@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - check the code
@@ -6,19 +6,13 @@
  * Return: Alwaays 0.
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	void print_alphabet(void)
+	char alpha;
+
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		char alpha;
-
-		for (alpha = 'a'; alpha <= 'z'; alpha++)
-		{
-			putchar(alpha);
-		}
-		putchar('\n');
+		_putchar(alpha);
 	}
-	print_alphabet();
-
-	return (0);
+	_putchar('\n');
 }
