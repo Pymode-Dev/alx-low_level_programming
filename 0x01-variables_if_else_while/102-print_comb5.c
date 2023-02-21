@@ -23,7 +23,7 @@ int main(void)
 			d4 = n2 % 10;
 			putchar(d3 + '0');
 			putchar(d4 + '0');
-			if (n1 != 98 || n2 != 90)
+			if (n1 != 98 || n2 != 99)
 			{
 				putchar(',');
 				putchar(' ');
