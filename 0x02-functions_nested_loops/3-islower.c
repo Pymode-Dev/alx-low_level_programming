@@ -2,7 +2,7 @@
 
 /**
  * _islower - print 1 or 0 if it is lowercase alphabet
- *
+ *@c: letter
  * Return: Always 0.
  */
 
