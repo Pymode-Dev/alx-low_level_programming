@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,6 +14,6 @@ void print_to_age(int n)
 
 	for (i = n; i <= 98; i++)
 	{
-		_putchar(i + '0');
+		printf("%d, ", i);
 	}
 }
