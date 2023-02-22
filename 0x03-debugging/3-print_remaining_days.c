@@ -10,7 +10,7 @@
  * Return: void
  */
 
-voif print_remainig_days(int month, int day, int year)
+void print_remainig_days(int month, int day, int year)
 {
 	if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0))
 	{
