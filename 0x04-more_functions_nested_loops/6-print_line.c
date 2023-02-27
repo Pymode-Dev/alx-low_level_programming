@@ -2,8 +2,8 @@
 
 /**
  * print_line - prints line
- *@n: int
- *Return: 0.
+ * @n: int
+ * Return: 0.
  */
 
 void print_line(int n)
@@ -17,5 +17,6 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
+		_putchar('\n');
 	}
 }
