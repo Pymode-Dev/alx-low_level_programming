@@ -2,7 +2,7 @@
 
 /**
  * rev_string - function that reverses a string.
- * @str: the string to reverse
+ * @s: the string to reverse
  * Return: 0.
  */
 
