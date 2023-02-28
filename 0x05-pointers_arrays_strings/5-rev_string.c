@@ -6,11 +6,11 @@
  * Return: 0.
  */
 
-void rev_string(char *str)
+void rev_string(char *s)
 {
 	int i = 0, j = 0, x, y;
 
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
@@ -20,9 +20,9 @@ void rev_string(char *str)
 
 	while (i < j)
 	{
-		m = str[i];
-		str[i] = s[j];
-		s[j] = m;
+		y = s[i];
+		s[i] = s[j];
+		s[j] = y;
 		i++;
 		j--;
 	}
