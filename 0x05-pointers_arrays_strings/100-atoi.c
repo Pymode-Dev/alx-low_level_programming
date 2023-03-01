@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int i, j, number;
 	
 	i = 0;
-	j = 1;
+	j = 0;
 	number = 0;
 
 	while (s[i] != '\0')
@@ -22,10 +22,10 @@ int _atoi(char *s)
 		{
 			while (s[i] >= '0' && s[i] <= '9')
 			{
-				number = (s[i] - '0') * j + number * 10;
+				numer = (s[i] - '0') * j + number * 10;
 				i++;
 			}
-			break
+			break;
 		}
 		i++;
 	}
