@@ -22,7 +22,7 @@ int _atoi(char *s)
 		{
 			while (s[i] >= '0' && s[i] <= '9')
 			{
-				numer = (s[i] - '0') * j + number * 10;
+				number = (s[i] - '0') * j + number * 10;
 				i++;
 			}
 			break;
