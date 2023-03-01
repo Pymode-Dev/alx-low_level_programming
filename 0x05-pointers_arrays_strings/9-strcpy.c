@@ -9,25 +9,27 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0, j = 0;
+	int i, j = 0;
 
-	while (src[i] != '0')
+	while (src[j] != '0')
 	{
+		j++;
+	}
+
+	i = 0;
+
+	while (i < j && src[i] != '\0')
+	{
+		dest[i] = src[i];
 		i++;
 	}
 
-	while (j < i && src[j] != '\0')
-	{
-		dest[j] = src[j];
-		j++;
-	}
+	i = 1;
 
-	j = 1;
-
-	while (j <= i)
+	while ij <= j)
 	{
-		dest[j] = '\0';
-		j++;
+		dest[i] = '\0';
+		i++;
 	}
 	return (dest);
 }
