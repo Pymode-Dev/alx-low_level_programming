@@ -10,8 +10,8 @@ char *rot13(char *s)
 {
 	int i, j;
 
-	char alpa[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
-	char rot[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbB=BcCdDeEfFgGhHiIjJkKlLmM";
+	char alpha[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char rot[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
 
 	i = 0;
 
