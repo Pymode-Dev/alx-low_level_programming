@@ -1,4 +1,4 @@
-#includ "main.h"
+#include "main.h"
 
 /**
  * _sqrt_recursion - function that returns natural square root oa number
@@ -10,6 +10,8 @@ int _sqrt_recursion(int n)
 {
 	return (sq(n, 1));
 }
+
+
 /**
  * sq - finds the square of numbers and compares
  * @num: number
