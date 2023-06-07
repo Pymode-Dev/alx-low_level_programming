@@ -2,7 +2,7 @@
 
 /**
  * _puts_recursion - put character on to the screen recursively
- * s: the string to print recursively
+ * @s: the string to print recursively
  * Return: void
  */
 
