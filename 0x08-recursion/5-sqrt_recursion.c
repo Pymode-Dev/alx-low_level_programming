@@ -6,10 +6,6 @@
  * Return: int
  */
 
-int _sqrt_recursion(int x)
-{
-	return ((int) _sqr(x, 1));
-}
 
 
 /**
@@ -28,4 +24,9 @@ int _sqr(int x, int root)
 	else if (root * root < x)
 		return (_sqr(x, root + 1));
 	return(0);
+}
+
+int _sqrt_recursion(int x)
+{
+	return (_sqr(x, 1));
 }
