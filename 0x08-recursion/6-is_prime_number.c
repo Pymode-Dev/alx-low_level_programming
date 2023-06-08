@@ -24,10 +24,10 @@ int _prime(int number, int check)
 {
 	if (number <= 1)
 		return (0);
-	else if (number % check == 0 || number <= 0)
-		return (0);
-	else if (check == number)
+	else if (check == number || number <= 0)
 		return (1);
+	else if (number % check == 0 || number <= 0)
+		return (0)
 	else
 		return (_prime(number, check + 1));
 }
