@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
+int _strlen_recursion(char *s);
+int _pal(char *str, int len);
 
 /**
  * _strlen_recursion - get the length of a string
