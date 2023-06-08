@@ -27,4 +27,5 @@ int _sqr(int x, int root)
 		return (root);
 	else if (root * root < x)
 		return (_sqr(x, root + 1));
+	return(0);
 }
