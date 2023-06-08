@@ -1,12 +1,12 @@
 #include <stdio.h>
 
+
+int _prime(int number, int check);
 /**
  * is_prime_number - function to find if a number is a prime or not
  * @number: The number to check
  * Return: int
  */
-
-int _prime(int number, int c);
 
 int is_prime_number(int number)
 {
@@ -16,16 +16,18 @@ int is_prime_number(int number)
 /**
  * _prime - checks if number is prime
  * @number: number
- * @c: number to check against
+ * @check: number to test against
  * Return: 1 for prime, 0
  */
 
-int _prime(int number, int c)
+int _prime(int number, int check)
 {
 	if (number <= 1)
 		return (0);
-	else if (number % c == 0 || number <= 0)
+	else if (number % check == 0 || number <= 0)
 		return (0);
+	else if (check == number)
+		return (1);
 	else
-		return (_prime(number, c + 1));
+		return (_prime(number, check + 1));
 }
