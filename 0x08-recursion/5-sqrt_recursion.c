@@ -8,15 +8,15 @@
 
 int _sqrt_recursion(int x)
 {
-	return ((int) _sqrt(x, 1));
+	return ((int) sqr(x, 1));
 }
 
-int _sqrt(int x, int root)
+int _sqr(int x, int root)
 {
 	if (x < 0)
 		return (-1);
 	else if (root * root == x)
 		return (root);
 	else
-		return ((int) (_sqrt(x, root + 1)));
+		return ((int) (_sqr(x, root + 1)));
 }
