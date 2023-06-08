@@ -8,8 +8,16 @@
 
 int _sqrt_recursion(int x)
 {
-	return (_sqr(x, 1));
+	return ((int) _sqr(x, 1));
 }
+
+
+/**
+ * _sqr - find the square of x
+ * @x: the number
+ * @root: the root
+ * Return: _sqr root or -1
+ */
 
 int _sqr(int x, int root)
 {
