@@ -13,7 +13,10 @@
  * @x: the number
  * @root: the root
  * Return: _sqr root or -1
+ *
  */
+
+int _sqr(int x, int root);
 
 int _sqr(int x, int root)
 {
