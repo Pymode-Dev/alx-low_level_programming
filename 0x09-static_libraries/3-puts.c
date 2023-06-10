@@ -1,12 +1,17 @@
 #include "main.h"
 
-void _puts(char *s)
+/**
+ * _puts - Prints a string
+ * @str: String param
+ * Return: Void
+ */
+void _puts(char *str)
 {
 	int i = 0;
 
-	while (s[i] != '\0')
+	while (!(str[i] == '\0'))
 	{
-		_putchar(s[i]);
+		_putchar(str[i]);
 		i++;
 	}
 	_putchar('\n');
