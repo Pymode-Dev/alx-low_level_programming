@@ -12,7 +12,6 @@
 
 int main(int argc, char *argv[])
 {
-	int x = 0;
 	int a = 0;
 
 	if (argc == 1)
@@ -35,5 +34,5 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", a);
 
-	return (x);
+	return (0);
 }
