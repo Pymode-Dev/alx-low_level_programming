@@ -7,7 +7,7 @@ int main()
 {
 	char *s;
 
-	s = _strdup("ALX SE");
+	s = _strdup(NULL);
 
 	if (s == NULL)
 	{
