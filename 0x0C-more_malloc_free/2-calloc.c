@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+/**
+ * _calloc - allocate to memory block
+ * @nmemb: memory block
+ * @size: size
+ * Return: char
+ */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *new;
@@ -13,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (new == NULL)
 		return (NULL);
-	
+
 	i = 0;
 	while (i < size)
 	{
