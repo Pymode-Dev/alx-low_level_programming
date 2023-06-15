@@ -3,7 +3,7 @@
 #include <string.h>
 #include "main.h"
 
-void simple_print_buffer(int *buffer, unsigned int size)
+void simple_print_buffer(char *buffer, unsigned int size)
 {
 	unsigned int i;
 
@@ -27,10 +27,18 @@ void simple_print_buffer(int *buffer, unsigned int size)
 
 int main()
 {
-	int *a;
+	char *a;
+	int i;
 
-	a = array_range(0, 10);
-	simple_print_buffer(a, 11);
+	a = malloc(sizeof(char) * 10);
+	a = _realloc(a, sizeof(char) * 10, sizeof(char) * 98);
+	
+	i = 0;
+	while (i < 98)
+	{
+		a[i++] = 98;
+	}
+	simple_print_buffer(a, 98);
 	free(a);
 	return (0);
 }
