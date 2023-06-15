@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	if (num <= 0)
+	if (num < 0)
 		return (NULL);
 
 	if (num >= _strlen(s2))
@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		j++;
 		i++;
 	}
-	new[i] = '\0';
+	new[i + 1] = '\0';
 
 	return (new);
 }
