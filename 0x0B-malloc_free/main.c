@@ -7,7 +7,7 @@ int main()
 {
 	char *s;
 
-	s = str_concat("Betty ", "Holberton");
+	s = str_concat(NULL, "Hello");
 
 	if (s == NULL)
 	{
