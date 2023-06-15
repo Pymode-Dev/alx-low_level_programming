@@ -23,13 +23,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	if (num < 0)
+	if (num <= 0)
 		return (NULL);
 
 	if (num >= _strlen(s2))
 		num = _strlen(s2);
 
-	length = _strlen(s1) + _strlen(s2) + 1;
+	length = _strlen(s1) + num + 1;
 	new = malloc(sizeof(*new) * length);
 
 	if (new == NULL)
