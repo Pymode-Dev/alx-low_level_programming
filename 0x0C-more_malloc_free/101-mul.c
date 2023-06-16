@@ -3,8 +3,8 @@
 
 /**
  * main - program that multiplies two positive numbers.
- * @num1: number 1
- * @num2: number 2
+ * @argc: argument count
+ * @argv: argument array
  * Return: int
  */
 
