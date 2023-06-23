@@ -4,6 +4,6 @@
 
 int main()
 {
-	print_numbers(", ", 4, 0, 98, -1024, 402);
+	print_numbers(NULL, 4, 0, 98, -1024, 402);
 	return (0);
 }
