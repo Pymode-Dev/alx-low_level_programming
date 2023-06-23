@@ -8,7 +8,7 @@ void print_float(va_list fl);
 
 /**
  * print_string - prints string
- * @arg: list of args
+ * @str: list of args
  * Return: void
  */
 
@@ -33,6 +33,7 @@ void print_string(va_list str)
 void print_char(va_list c)
 {
 	char ch = va_arg(c, int);
+
 	printf("%c", ch);
 }
 
@@ -45,6 +46,7 @@ void print_char(va_list c)
 void print_int(va_list n)
 {
 	int number = va_arg(n, int);
+
 	printf("%d", number);
 }
 
@@ -57,6 +59,7 @@ void print_int(va_list n)
 void print_float(va_list fl)
 {
 	float fl_num = va_arg(fl, double);
+
 	printf("%f", fl_num);
 }
 
