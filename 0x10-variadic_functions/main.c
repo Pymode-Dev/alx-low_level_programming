@@ -4,6 +4,6 @@
 
 int main()
 {
-	print_strings(", ", 2, "Jay", "Django");
+	print_numbers(", ", 4, 200, -350, 430, 11);
 	return (0);
 }
