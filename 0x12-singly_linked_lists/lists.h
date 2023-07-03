@@ -1,5 +1,5 @@
-#ifndef __LINKED__
-#define __LINKED__
+#ifndef _MAIN_
+#define _MAIN_
 
 #include <stdio.h>
 #include <string.h>
@@ -9,6 +9,7 @@
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
+ * @next: points to the next node
  *
  * Description: singly linked list node structure
  */
@@ -23,4 +24,4 @@ typedef struct list_s
 int _putchar(char c);
 size_t print_list(const list_t *h);
 
-#endif /* __LINKED__ */
+#endif /* _MAIN_ */
