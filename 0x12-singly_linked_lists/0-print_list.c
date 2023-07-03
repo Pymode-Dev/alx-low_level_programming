@@ -10,15 +10,16 @@
 
 size_t print_list(const list_t *h)
 {
-       long unsigned node;
-       const list_t *ptr = NULL;
-       ptr = h;
+	unsigned long node;
+
+	const list_t *ptr = NULL;
+
+	ptr = h;
 
 	node = 0;
 
 	while (ptr != NULL)
 	{
-
 		if (ptr->str == NULL)
 		{
 			printf("[0] (nil)\n");
