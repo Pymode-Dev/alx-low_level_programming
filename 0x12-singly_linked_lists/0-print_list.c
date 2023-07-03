@@ -10,7 +10,7 @@
 
 size_t print_list(const list_t *h)
 {
-	unsigned long node;
+	size_t node;
 
 	const list_t *ptr = NULL;
 

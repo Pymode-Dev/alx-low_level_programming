@@ -20,6 +20,7 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
+int _putchar(int c);
 size_t print_list(const list_t *h);
 
 #endif /* __LINKED__ */
