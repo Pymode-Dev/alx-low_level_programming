@@ -1,5 +1,12 @@
 #include "lists.h"
 
+/**
+ * str_len - calculates the length of string
+ * @str: the string
+ *
+ * Return: int
+ */
+
 int str_len(const char *str)
 {
 	int i;
