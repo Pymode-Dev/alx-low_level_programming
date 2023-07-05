@@ -1,0 +1,5 @@
+
+========== 3-add_nodeint_end.c ==========
+3-add_nodeint_end.c:26: ERROR: trailing statements should be on next line
+total: 1 errors, 0 warnings, 33 lines checked
+add_nodeint_end
