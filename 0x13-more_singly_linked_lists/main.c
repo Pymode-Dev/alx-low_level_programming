@@ -3,7 +3,7 @@
 int main()
 {
 	listint_t *head;
-	int n;
+	listint_t *node;
 
 	head = NULL;
 
@@ -16,13 +16,10 @@ int main()
 	add_nodeint_end(&head, 402);
 	add_nodeint_end(&head, 1024);
 	print_listint(head);
-	n = pop_listint(&head);
-	printf("- %d\n", n);
-	print_listint(head);
-	n = pop_listint(&head);printf("- %d\n", n);
+	node = get_nodeint_at_index(head, 0);
+	printf("%d\n", node->n);
 	print_listint(head);
 	free_listint2(&head);
-	printf("%p\n", (void *)head);
 
 	return(0);
 }
