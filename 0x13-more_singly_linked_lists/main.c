@@ -17,10 +17,7 @@ int main()
 
 	print_listint(head);
 	printf("----------------\n");
-	delete_nodeint_at_index(&head, 5);
-	print_listint(head);
-	printf("-----------------\n");
-	delete_nodeint_at_index(&head, 0);
+	reverse_listint(&head);
 	print_listint(head);
 	free_listint2(&head);
 
