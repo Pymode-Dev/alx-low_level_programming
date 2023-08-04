@@ -22,7 +22,7 @@ unsigned int binary_to_unit(const char *b)
 		result <<= 1;
 		result += b[i] - '0';
 		i++;
-	}	
+	}
 
 	return (result);
 }
