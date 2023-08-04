@@ -2,7 +2,7 @@
 
 
 /**
- * binary_to_unit - convert binary to integer
+ * binary_to_uint - convert binary to integer
  * @b: the binary number
  * Return: int or 0
  */
