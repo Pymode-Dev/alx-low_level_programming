@@ -1,6 +1,12 @@
 #include "main.h"
 
 
+/**
+ * print_binary - print integer number to binary number
+ * @n: the integer
+ * Return: void
+ */
+
 void print_binary(unsigned long int n)
 {
 	if (n > 1)
