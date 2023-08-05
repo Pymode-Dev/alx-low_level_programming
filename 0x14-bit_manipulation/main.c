@@ -2,19 +2,18 @@
 
 int main(void)
 {
-	unsigned long int n;
+	int n;
 
-	n = flip_bits(1024, 1);
-	printf("%lu\n", n);
+	n = get_endianness();
 
-	n = flip_bits(402, 98);
-	printf("%lu\n", n);
-
-	n = flip_bits(1024, 3);
-	printf("%lu\n", n);
-
-	n = flip_bits(1024, 1025);
-	printf("%lu\n", n);
+	if (n != 0)
+	{
+		printf("Little Endian\n");
+	}
+	else
+	{
+		printf("Big Endian\n");
+	}
 
 	return (0);
 }
