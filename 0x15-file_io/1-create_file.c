@@ -23,12 +23,12 @@ int create_file(const char *filename, char *text_content)
 			length++;
 	}
 
-	filed = open(filename, O_CREAT | O_RDWR | OTRUNC, 0600);
+	filed = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	words = write(filed, text_content, length);
 
-	if (filed == -1 || word == -1)
+	if (filed == -1 || words == -1)
 		return (-1);
 
-	close(fd);
+	close(filed);
 	return (1);
 }
