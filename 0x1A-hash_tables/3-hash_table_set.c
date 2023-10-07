@@ -1,6 +1,5 @@
 #include "hash_tables.h"
 
-
 /**
  * hash_table_set - function that adds an element to the hash table.
  * @ht: the head pointer to the table
@@ -24,9 +23,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
-
-	i = index;
-	for (; ht->array[i], i++)
+	for (i = index; ht->array[i], i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
 		{
@@ -37,7 +34,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 
 	nptr = malloc(sizeof(hash_node_t));
-
 	if (nptr == NULL)
 	{
 		free(value_copy);
