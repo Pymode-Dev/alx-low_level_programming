@@ -2,18 +2,10 @@
 
 int main(void)
 {
-	unsigned long int hash_t;
-	char *s;
+	hash_table_t *ht;
 
-	hash_t = 1024;
-	s = "cisfun";
-	printf("%lu\n", hash_djb2((unsigned char *)s));
-	printf("%lu\n", key_index((unsigned char *)s, hash_t));
-	s = "Don't forget to tweet today";
-	printf("%lu\n", hash_djb2((unsigned char *)s));
-	printf("%lu\n", key_index((unsigned char *)s, hash_t));
-	s = "98";
-	printf("%lu\n", hash_djb2((unsigned char *)s));
-	printf("%lu\n", key_index((unsigned char *)s, hash_t));
+	ht = hash_table_create(1024);
+	hash_table_set(ht, "betty", "cool");
+
 	return (EXIT_SUCCESS);
 }
