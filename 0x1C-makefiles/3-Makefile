@@ -13,9 +13,6 @@ clean:
 oclean:
 	$(RM) $(OBJ)
 
-fclean:
-	$(RM) *~ $(SRC) $(OBJ)
+fclea: clean oclean
 
-re:
-	$(RM) $(OBJ)
-	$(CC) $(SRC) -o $(NAME)
+re: fclean all
